@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DeliveryBoysBw"
+        tools:targetApi="31">
+        <activity
+            android:name=".MenuActivities.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivities.VulaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivities.PickAndDrop"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivities.FastFoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivities.PharmacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivities.Customer"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.UpdateProductDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ProductDetails"
+            android:exported="false" />
+        <activity
+            android:name=".makeCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CustomerOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CustomerUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.RegisterAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewCustomer"
+            android:exported="false" />
+        <activity
+            android:name=".AdministratorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.OnBoardScreenThree"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.onBoardScreenTwo"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.RegisterUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ForgotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LoginActivtity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="223dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginRight="-4dp"
+        android:contentDescription="@string/image"
+        app:srcCompat="@drawable/handset" />
+
+    <ImageView
+        android:id="@+id/usericon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="283.3dp"
+        android:layout_marginLeft="283.3dp"
+        android:layout_marginTop="37.3dp"
+        android:layout_marginEnd="64.7dp"
+        android:layout_marginRight="64.7dp"
+        android:layout_marginBottom="596.7dp"
+        android:contentDescription="@string/image"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:layout_width="108.7dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="31.3dp"
+        android:layout_marginBottom="582.7dp"
+        android:layout_marginLeft="27.7dp"
+        android:layout_marginRight="229.7dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:gravity="center"
+        android:text="@string/dashboard"
+        android:textColor="@color/fuel_orange"
+        android:textSize="15sp"
+        android:layout_marginEnd="229.7dp"
+        android:layout_marginStart="27.7dp" />
+
+    <TextView
+        android:id="@+id/displayusername"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="302dp"
+        android:layout_marginLeft="302dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="597dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:gravity="center"
+        android:text="@string/theo"
+        android:textColor="@color/white"
+        tools:ignore="RelativeOverlap" />
+
+
+    <ImageView
+        android:id="@+id/logoutAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/displayusername"
+        android:layout_alignRight="@+id/displayusername"
+        android:layout_alignBottom="@+id/displayusername"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="-36dp"
+        app:srcCompat="@drawable/ic_baseline_exit_to_app_24"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView12"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/gontserratbold"
+        android:text="What You Want Delivered??"
+        android:textAlignment="center"
+        android:textColor="@color/fuel_orange"
+        android:textSize="20sp" />
+
+
+    <!-- Grocery Part -->
+    <ImageView
+        android:id="@+id/groceryImageView"
+        android:layout_width="120dp"
+        android:layout_height="101dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/groceries_icon" />
+    <TextView
+        android:id="@+id/groceryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groceryImageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gontserratbold"
+        android:text="@string/grocery"
+        android:textColor="@color/white" />
+
+    <!-- Pharmacy Part -->
+    <ImageView
+        android:id="@+id/pharmacyImageView"
+        android:layout_width="120dp"
+        android:layout_height="101dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        app:srcCompat="@drawable/pharmacy_boys" />
+    <TextView
+        android:id="@+id/pharmacyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pharmacyImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gontserratbold"
+        android:textColor="@color/white"
+        android:layout_marginEnd="65dp"
+        android:text="Pharmacy" />
+
+    <!-- Fast Food Part-->
+    <ImageView
+        android:id="@+id/fastFoodImageView"
+        android:layout_width="120dp"
+        android:layout_height="101dp"
+        android:layout_below="@+id/groceryTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/fast_food" />
+    <TextView
+        android:id="@+id/fastFoodTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fastFoodImageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gontserratbold"
+        android:text="Fast Food"
+        android:textColor="@color/white"/>
+
+
+
+    <ImageView
+        android:id="@+id/pickImageView"
+        android:layout_width="120dp"
+        android:layout_height="101dp"
+        android:layout_below="@+id/pharmacyTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        app:srcCompat="@drawable/our_bike" />
+
+    <TextView
+        android:id="@+id/pickTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/gontserratbold"
+        android:text="@string/pick_and_drop"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/vulaImageView"
+        android:layout_width="120dp"
+        android:layout_height="101dp"
+        android:layout_below="@+id/fastFoodTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/vula" />
+
+    <TextView
+        android:id="@+id/vulaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vulaImageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gontserratbold"
+        android:text="Alcohol"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/cartImageView"
+        android:layout_width="120dp"
+        android:layout_height="101dp"
+        android:layout_below="@+id/pickTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        app:srcCompat="@drawable/bev" />
+
+    <TextView
+        android:id="@+id/cartTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cartImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="90dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/gontserratbold"
+        android:text="Cart"
+        android:textColor="@color/white"  />
+
+
+</RelativeLayout>
